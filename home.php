@@ -1,54 +1,56 @@
-<?php
-// home.php
-// Halaman sambutan untuk aplikasi Penyewaan Alat Komunikasi
-?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda - Penyewaan Alat Komunikasi</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - RentCamp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="home.php">Penyewaan Alat Komunikasi</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="home.php">Beranda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.php">Data Alat</a></li>
-                    <li class="nav-item"><a class="nav-link" href="create.php">Tambah Data</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Konten utama -->
-    <div class="container text-center py-5">
-        <h1 class="display-5 fw-bold text-primary">Selamat Datang di Sistem Penyewaan Alat Komunikasi</h1>
-        <p class="lead mt-3">
-            Aplikasi ini digunakan untuk mengelola data alat komunikasi, mulai dari menambah, mengedit,
-            hingga menghapus data alat yang tersedia untuk disewa.
-        </p>
-        <img src="https://cdn-icons-png.flaticon.com/512/3068/3068413.png" alt="Icon alat komunikasi" width="150" class="my-4">
-        <div>
-            <a href="index.php" class="btn btn-success btn-lg me-2">Lihat Data Alat</a>
-            <a href="create.php" class="btn btn-outline-primary btn-lg">Tambah Data Baru</a>
-        </div>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo-area">
+      <span class="logo-icon">📱</span>
+      <span class="logo-text">RentCamp</span>
     </div>
+  </header>
 
-    <!-- Footer -->
-    <footer class="bg-light text-center py-3 mt-5 border-top">
-        <small>&copy; <?= date('Y') ?> Aplikasi Penyewaan Alat Komunikasi</small>
-    </footer>
+  <!-- HERO SECTION -->
+  <section class="hero fade-in">
+    <h1>Selamat Datang di RentCamp</h1>
+    <p>Menyewakan alat komunikasi dengan mudah, cepat, dan aman.</p>
+    <a href="create.php" class="btn btn-primary">Mulai Penyewaan</a>
+  </section>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- FEATURE SECTION -->
+  <section class="feature-container fade-in">
+    <div class="feature-card">
+      <div class="icon">📋</div>
+      <h3>Kelola Penyewaan</h3>
+      <p>Tambah, edit, atau hapus data penyewaan dengan mudah.</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">💰</div>
+      <h3>Transaksi Cepat</h3>
+      <p>Pembayaran dan pencatatan transaksi cepat dan akurat.</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">📊</div>
+      <h3>Laporan Lengkap</h3>
+      <p>Lihat laporan penyewaan harian, mingguan, atau bulanan.</p>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="cta-section fade-in">
+    <h2>Siap Menyewa Sekarang?</h2>
+    <a href="create.php" class="btn btn-primary">Mulai Penyewaan</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    &copy; 2025 RentCamp. All rights reserved.
+  </footer>
 </body>
 </html>
