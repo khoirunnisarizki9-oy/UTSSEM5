@@ -20,7 +20,8 @@
   <section class="hero fade-in">
     <h1>Selamat Datang di RentCamp</h1>
     <p>Menyewakan alat komunikasi dengan mudah, cepat, dan aman.</p>
-    <a href="create.php" class="btn btn-primary">Mulai Penyewaan</a>
+    <!-- Tombol di bawah tulisan diubah -->
+    <a href="index.php" class="btn btn-primary">Lihat Data Penyewa</a>
   </section>
 
   <!-- FEATURE SECTION -->
@@ -42,7 +43,7 @@
     </div>
   </section>
 
-  <!-- CALL TO ACTION -->
+  <!-- CALL TO ACTION (tetap Mulai Penyewaan) -->
   <section class="cta-section fade-in">
     <h2>Siap Menyewa Sekarang?</h2>
     <a href="create.php" class="btn btn-primary">Mulai Penyewaan</a>
@@ -50,7 +51,7 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    &copy; 2025 RentCamp. All rights reserved.
+    &copy; 2025 Aplikasi Penyewaan Alat Komunikasi.
   </footer>
 </body>
 </html>

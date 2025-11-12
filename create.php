@@ -33,15 +33,36 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="card">
       <h2 class="card-title">➕ Tambah Penyewa Baru</h2>
       <form method="post" class="form" autocomplete="off">
+        <!-- Nama Penyewa -->
         <label>Nama Penyewa</label>
         <input type="text" name="nama" placeholder="Masukkan nama penyewa" required>
 
+        <!-- Alat yang Disewa -->
         <label>Alat yang Disewa</label>
-        <input type="text" name="alat" placeholder="Contoh: HT, Radio, Walkie Talkie" required>
+        <select name="alat" required>
+          <option value="" disabled selected>Pilih alat</option>
+          <option>Hp iPhone 11 Pro Max</option>
+          <option>Hp iPhone 11</option>
+          <option>Hp iPhone 12 Pro Max</option>
+          <option>Hp iPhone 12</option>
+          <option>Hp iPhone 13 Pro Max</option>
+          <option>Hp iPhone 13</option>
+          <option>Camera Nikon</option>
+          <option>Camera Nikon 60D</option>
+          <option>Camera Canon EOS 1500D</option>
+          <option>Camera Canon EOS 60D</option>
+          <option>Camera Canon EOS R8</option>
+          <option>HT Icom Ic-v80</option>
+          <option>HT XiR P3688</option>
+          <option>HT XiR C2660</option>
+          <option>HT UV-5R</option>
+        </select>
 
+        <!-- Kontak -->
         <label>Kontak</label>
         <input type="text" name="kontak" placeholder="Nomor telepon atau email" required>
 
+        <!-- Tombol aksi -->
         <div class="form-actions">
           <a href="index.php" class="btn btn-secondary">⬅ Kembali</a>
           <button type="submit" class="btn btn-primary">💾 Simpan</button>
